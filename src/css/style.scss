@@ -17,16 +17,11 @@ body {
         height: 90px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 15px;
         box-sizing: border-box;
 
-        .header__icon {
-            width: 90px;
-            height: 90px;
-            background: url(../img/icon-weather.png) center center no-repeat;
-            background-size: cover;
-        }
+        
         .header__date {
             color: rgb(197, 197, 197);
             font-weight: bold;
