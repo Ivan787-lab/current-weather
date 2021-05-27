@@ -8,6 +8,9 @@ export default function outputWeather(cityName) {
         type: 'GET',
         success: function (json) {
             console.log(json);
+            document.getElementById("main__degrees").innerHTML = `${json.main.temp} <i class=\"degrees__circle far fa-circle\"></i>`
+
+
         },
         error: function (err) {
             console.log("Request failed, error= " + err);

@@ -1,3 +1,4 @@
+import outputWeather from './outputWeather';
 const $ = require('jquery')
 
 export default (function defineLocation() {
@@ -12,7 +13,8 @@ export default (function defineLocation() {
             else {
                 localStorage.setItem("lang", "en")  
             }
-            document.getElementById("location").innerHTML = json.city
+            
+            outputWeather(json.city)
         },
         error: function (err) {
             console.log("Request failed, error= " + err);
@@ -20,3 +22,7 @@ export default (function defineLocation() {
     });
 })()
 
+/*
+    Небольшое разъяснение что здесь произошло.
+    Я вызвал функцию outputWeather именно здесь потому что по какой-то причине я не могу возвращать локацию пользователя вне блока success поэтому я ее вызвал здесь чтобы дать ей аргумент json.city. А так как defineLocation функция вызываемая сразу, то мне достаточно импортировать ее в main.js
+*/
