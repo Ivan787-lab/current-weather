@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+$bg-for-header:#2b244d;
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -9,4 +11,38 @@ body {
     height: max-content;
     display: flex;
     flex-direction: column;
+
+    header {
+        background: $bg-for-header;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        box-sizing: border-box;
+
+        .header__icon {
+            width: 90px;
+            height: 90px;
+            background: url(../img/icon-weather.png) center center no-repeat;
+            background-size: cover;
+        }
+        .header__date {
+            color: rgb(197, 197, 197);
+            font-weight: bold;
+            letter-spacing: 1.7px;
+        }
+        #name-of-day {
+            color: white;
+        }
+        .header__location {
+            color: rgb(197, 197, 197);
+            font-weight: bold;
+            letter-spacing: 1.7px;
+            text-align: right;
+        }
+        #location {
+            color: white;
+        }
+    }
 }
