@@ -4,9 +4,9 @@ export default (function defineDate() {
     document.getElementById("name-of-day").innerHTML = moment().locale(localStorage.getItem("lang")).format('dddd');
     document.getElementById("number-of-day").innerHTML = moment().locale(localStorage.getItem("lang")).format("Do");
     document.getElementById("name-of-month").innerHTML = moment().locale(localStorage.getItem("lang")).format("MMMM")
-    document.getElementById("time").innerHTML = moment().format('LTS');
+    document.getElementById("time").innerHTML = moment().format('HH:mm');
     setInterval(() => {
-        document.getElementById("time").innerHTML = moment().format('LTS');
+        document.getElementById("time").innerHTML = moment().format('HH:mm:ss');
     }, 1000);
 
     if (parseInt(moment().format("HH")) >= 23 || parseInt(moment().format("HH")) <= 5) {
