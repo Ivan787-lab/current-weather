@@ -12,9 +12,9 @@ export default (function defineLocation() {
             }
             else {
                 localStorage.setItem("lang", "en")  
-            }
+            } // здесь все сохраняется в LS для того чтобы формировать API запрос для нужной страны и языка
             
-            outputWeather(json.city)
+            outputWeather(json.city) // вот тут сразу вызывая функцию, ведь больше доступа к параметру json нету. Поскольку функция defineLocation сразу вызывается, мне ее достаточно просто импортировать
         },
         error: function (err) {
             console.log("Request failed, error= " + err);

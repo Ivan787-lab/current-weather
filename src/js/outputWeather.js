@@ -1,4 +1,5 @@
-const $ = require('jquery')
+const $ = require('jquery')//подключил jquery специально здесь, так как нигде больше не используется
+
 export default function outputWeather(cityName) {
     const requestUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=${localStorage.getItem("lang")}&units=metric&appid=359455a64010ae0b28935b25c2eb104b`
 
@@ -9,7 +10,7 @@ export default function outputWeather(cityName) {
         success: function (json) {
             console.log(json);
 
-            json.main.temp == undefined ? document.getElementById("main__degrees").parentElement.remove():document.getElementById("main__degrees").innerHTML =  `${Math.round(json.main.temp)} <i class=\"degrees__circle far fa-circle\"></i>`
+            json.main.temp == undefined ? document.getElementById("main__degrees").parentElement.remove():document.getElementById("main__degrees").innerHTML =  `${Math.round(json.main.temp)} <i class=\"degrees__circle far fa-circle\"></i>` // подобная форма написана для того чтобы изюежать появления undefined на сайте. Если же все таки какого-либо пункта вв json файле не будет, элемент просто удалится
 
             json.main.feels_like == undefined ? document.getElementById("feels-like").parentElement.remove():document.getElementById("feels-like").innerHTML = `${Math.round(json.main.feels_like)}`
 
@@ -31,3 +32,5 @@ export default function outputWeather(cityName) {
         }
     });
 }
+
+// экспортируется только эта функция, поэтому она по дефолту

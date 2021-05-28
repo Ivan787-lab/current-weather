@@ -15,6 +15,6 @@ export default (function defineDate() {
     else if (parseInt(moment().format("HH")) >= 5 && parseInt(moment().format("HH")) <= 11) {
         document.querySelector("main").style.backgroundImage = "linear-gradient(to top right,rgb(7, 171, 186),rgb(27, 173, 180),rgb(47, 175, 174),rgb(67, 177, 168),rgb(87, 179, 162),rgb(107, 181, 156),rgb(127, 183, 150),rgb(147, 185, 144),rgb(167, 187, 138),rgb(187, 189, 132),rgb(207, 191, 126),rgb(227, 193, 120))"
     }
-    
+    // вот тут 2 условия стоят для того чтобы менять фон в завимости от времени суток
 })()
 
