@@ -11,15 +11,15 @@ export default function outputWeather(cityName) {
 
             json.main.temp == undefined ? document.getElementById("main__degrees").parentElement.remove():document.getElementById("main__degrees").innerHTML =  `${Math.round(json.main.temp)} <i class=\"degrees__circle far fa-circle\"></i>`
 
-            json.main.feels_like == undefined ? document.getElementById("feels-like").parentElement.remove():document.getElementById("feels-like").innerHTML = `${Math.round(json.main.feels_like)} м/с`
+            json.main.feels_like == undefined ? document.getElementById("feels-like").parentElement.remove():document.getElementById("feels-like").innerHTML = `${Math.round(json.main.feels_like)}`
 
             json.name == undefined ? document.getElementById("city-name").remove():document.getElementById("city-name").innerHTML = json.name
 
             json.main.humidity == undefined ? document.getElementById("humidity").parentElement.remove():document.getElementById("humidity").innerHTML = `${json.main.humidity}%`
 
-            json.wind.speed == undefined ? document.getElementById("speed").parentElement.remove():document.getElementById("speed").innerHTML = `${json.wind.speed} м/с`
+            json.wind.speed == undefined ? document.getElementById("speed").parentElement.remove():document.getElementById("speed").innerHTML = `${Math.round(json.wind.speed)} м/с`
 
-            json.wind.gust == undefined ? document.getElementById("gust").parentElement.remove():document.getElementById("gust").innerHTML = `${json.wind.gust} м/с`
+            json.wind.gust == undefined ? document.getElementById("gust").parentElement.remove():document.getElementById("gust").innerHTML = `${Math.round(json.wind.gust)} м/с`
 
             json.clouds.all == undefined ? document.getElementById("clouds").parentElement.remove():document.getElementById("clouds").innerHTML = `${json.clouds.all}%`
 
