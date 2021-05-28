@@ -29,18 +29,49 @@
 </head>
 
 <body>
-    <header>
-        <h2 class="header__date">
-            <span id="name-of-day" class="date__span">Sunday</span>
-            <span id="number-of-day" class="date__span">12th</span>
-            <span id="name-of-month" class="date__span">December</span>
-        </h2>
-    </header>
     <main>
-        <p class="main__text"> <span id="main__degrees"></span>
-        </p>
-        <p class="main__text">Ощущается как:&ensp;<span id="feels-like">6</span><i
-                class="feels-like__circle far fa-circle"></i></p>
+        <div class="main__about-weather">
+            <div class="about-weather__degrees">
+                <p class="main__text">
+                    <span id="main__degrees"></span>
+                    <span class="main__metric">C</span>
+                </p>
+                <p class="main__text-feels-like">Ощущается как:&ensp;
+                    <span id="feels-like">6</span>
+                    <i class="feels-like__circle far fa-circle"></i> 
+                    <span class="main__metric"> C</span>
+                </p>
+            </div>
+            <div class="about-weather__other-information">
+                <div class="other-information__column">
+                    <p class="other-information__text">
+                        Скорость ветра - 
+                        <span class="other-information__text-span" id="speed"></span>
+                    </p>
+                    <p class="other-information__text">
+                        Влажность - 
+                        <span class="other-information__text-span" id="humidity"></span>
+                    </p>
+                    <p class="other-information__text">
+                        Порыв ветра - 
+                        <span class="other-information__text-span" id="gust"></span>
+                    </p>
+                    <p class="other-information__text">
+                        Облачность - 
+                        <span class="other-information__text-span" id="clouds"></span>
+                    </p>
+                    hgfhfghfghfghfh
+                </div>    
+            </div>
+         </div>
+        <h2 id="city-name"></h2>
+        <h2 class="main__date">
+            <span id="name-of-day" class="date__span"></span>
+            <span id="number-of-day" class="date__span"></span>
+            <span id="name-of-month" class="date__span"></span>
+        </h2>
+        <h2 id="time"></h2>
+        <p id="description"></p>
     </main>
 </body>
 
