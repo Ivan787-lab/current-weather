@@ -211,7 +211,6 @@ body {
   }
 }
 
-
 @media (max-width: 1024px) {
   body {
     height: max-content;
@@ -361,6 +360,10 @@ body {
     main {
       padding: 15px;
       height: 100vh !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       .main__about-weather {
         width: 290px;
         display: block;
@@ -404,12 +407,12 @@ body {
       }
       .main__date {
         top: 45px;
-        left: 50px;
+        left: 80px;
         position: absolute;
       }
       #time {
         top: 0;
-        left: 135px;
+        left: 145px;
         position: absolute;
         font-size: 1.5em;
       }
@@ -430,6 +433,9 @@ body {
     main {
       padding: 15px;
       height: 100vh !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .main__about-weather {
         width: 290px;
         display: block;
