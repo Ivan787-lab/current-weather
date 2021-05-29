@@ -2,6 +2,23 @@
 <html lang="ru">
 
 <head>
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Weather ">
+    <meta name="apple-mobile-web-app-title" content="Weather ">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl"
+        content="https://freelancer-portfolio.ru/wp-content/themes/freelancer-portfolio-ru/pages/weather-forecast/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="images/png" sizes="192x192"
+        href="https://freelancer-portfolio.ru/wp-content/themes/freelancer-portfolio-ru/pages/weather-forecast/assets/icon-weather.png">
+    <link rel="apple-touch-icon" type="images/png" sizes="192x192"
+        href="https://freelancer-portfolio.ru/wp-content/themes/freelancer-portfolio-ru/pages/weather-forecast/assets/icon-weather.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/icon-weather.png">
@@ -38,31 +55,31 @@
                 </p>
                 <p class="main__text-feels-like">Ощущается как:&ensp;
                     <span id="feels-like"></span>
-                    <i class="feels-like__circle far fa-circle"></i> 
+                    <i class="feels-like__circle far fa-circle"></i>
                     <span class="main__metric"> C</span>
                 </p>
             </div>
             <div class="about-weather__other-information">
                 <div class="other-information__column">
                     <p class="other-information__text">
-                        Скорость ветра - 
+                        Скорость ветра -
                         <span class="other-information__text-span" id="speed"></span>
                     </p>
                     <p class="other-information__text">
-                        Влажность - 
+                        Влажность -
                         <span class="other-information__text-span" id="humidity"></span>
                     </p>
                     <p class="other-information__text">
-                        Порыв ветра - 
+                        Порыв ветра -
                         <span class="other-information__text-span" id="gust"></span>
                     </p>
                     <p class="other-information__text">
-                        Облачность - 
+                        Облачность -
                         <span class="other-information__text-span" id="clouds"></span>
                     </p>
-                </div>    
+                </div>
             </div>
-         </div>
+        </div>
         <h2 id="city-name"></h2>
         <h2 class="main__date">
             <span id="name-of-day" class="date__span"></span>
@@ -71,7 +88,7 @@
         </h2>
         <h2 id="time"></h2>
         <p id="description"></p>
-        
+
     </main>
 </body>
 
