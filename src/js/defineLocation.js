@@ -2,7 +2,7 @@ import outputWeather from './outputWeather';
 const $ = require('jquery')
 
 export default (function defineLocation() {
-    var requestUrl = "http://ip-api.com/json";
+    var requestUrl = "https://pro.ip-api.com/json?key=rEBFT7d9CCndroL";
     $.ajax({
         url: requestUrl,
         type: 'GET',
