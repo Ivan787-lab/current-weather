@@ -1,0 +1,15 @@
+{
+    "name": "Weather today",
+    "short_name": "Weather ",
+    "lang": "ru-RU",
+    "start_url": "https://freelancer-portfolio.ru/wp-content/themes/freelancer-portfolio-ru/pages/weather-forecast/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "https://freelancer-portfolio.ru/wp-content/themes/freelancer-portfolio-ru/pages/weather-forecast/assets/icon-weather.png",
+        "sizes": "192x192",
+        "type": "images/png"
+      }
+    ]
+  }
