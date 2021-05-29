@@ -15,7 +15,7 @@ body {
 
   main {
     width: 95%;
-    height: 850px;
+    height: 650px;
     border-radius: 12px;
     align-self: center;
     padding: 35px;
@@ -142,9 +142,7 @@ body {
 
 @media (max-width: 1440px) {
   body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    height: max-content;
 
     main {
       padding: 15px;
@@ -184,39 +182,39 @@ body {
           }
         }
       }
+
       #city-name {
         font-size: 1.5rem;
         position: absolute;
-        top: 550px;
+        top: 500px;
         left: 70px;
         max-width: 320px;
       }
       .main__date {
-        top: 95px;
-        left: 30px;
+        top: 45px;
+        left: 50px;
         position: absolute;
       }
       #time {
-        top: 50px;
-        left: 105px;
+        top: 0;
+        left: 135px;
         position: absolute;
         font-size: 1.5em;
       }
       #description {
         position: absolute;
         width: max-content;
-        top: 165px;
-        left: 20px;
+        top: 125px;
+        left: 80px;
       }
     }
   }
 }
 
+
 @media (max-width: 1024px) {
   body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    height: max-content;
 
     main {
       padding: 15px;
@@ -260,37 +258,34 @@ body {
       #city-name {
         font-size: 1.5rem;
         position: absolute;
-        top: 550px;
+        top: 500px;
         left: 70px;
         max-width: 320px;
       }
       .main__date {
-        top: 95px;
-        left: 30px;
+        top: 45px;
+        left: 50px;
         position: absolute;
       }
       #time {
-        top: 50px;
-        left: 105px;
+        top: 0;
+        left: 135px;
         position: absolute;
         font-size: 1.5em;
       }
       #description {
         position: absolute;
         width: max-content;
-        top: 165px;
-        left: 20px;
+        top: 125px;
+        left: 80px;
       }
-
     }
   }
 }
 
 @media (max-width: 768px) {
   body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    height: max-content;
 
     main {
       padding: 15px;
@@ -334,26 +329,26 @@ body {
       #city-name {
         font-size: 1.5rem;
         position: absolute;
-        top: 550px;
+        top: 500px;
         left: 70px;
         max-width: 320px;
       }
       .main__date {
-        top: 95px;
-        left: 30px;
+        top: 45px;
+        left: 50px;
         position: absolute;
       }
       #time {
-        top: 50px;
-        left: 105px;
+        top: 0;
+        left: 135px;
         position: absolute;
         font-size: 1.5em;
       }
       #description {
         position: absolute;
         width: max-content;
-        top: 165px;
-        left: 20px;
+        top: 125px;
+        left: 80px;
       }
     }
   }
@@ -361,9 +356,7 @@ body {
 
 @media (max-width: 425px) {
   body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    height: max-content;
 
     main {
       padding: 15px;
@@ -405,37 +398,34 @@ body {
       #city-name {
         font-size: 1.5rem;
         position: absolute;
-        top: 550px;
+        top: 500px;
         left: 70px;
         max-width: 320px;
       }
       .main__date {
-        top: 95px;
-        left: 30px;
+        top: 45px;
+        left: 50px;
         position: absolute;
       }
       #time {
-        top: 50px;
-        left: 105px;
+        top: 0;
+        left: 135px;
         position: absolute;
         font-size: 1.5em;
       }
       #description {
         position: absolute;
         width: max-content;
-        top: 165px;
-        left: 20px;
+        top: 115px;
+        left: 110px;
       }
-
     }
   }
 }
 
 @media (max-width: 375px) {
   body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    height: max-content;
 
     main {
       padding: 15px;
@@ -477,37 +467,34 @@ body {
       #city-name {
         font-size: 1.5rem;
         position: absolute;
-        top: 550px;
+        top: 500px;
         left: 70px;
         max-width: 320px;
       }
       .main__date {
-        top: 95px;
-        left: 30px;
+        top: 45px;
+        left: 50px;
         position: absolute;
       }
       #time {
-        top: 50px;
-        left: 105px;
+        top: 0;
+        left: 135px;
         position: absolute;
         font-size: 1.5em;
       }
       #description {
         position: absolute;
         width: max-content;
-        top: 165px;
-        left: 20px;
+        top: 115px;
+        left: 110px;
       }
-
     }
   }
 }
 
 @media (max-width: 320px) {
   body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    height: max-content;
 
     main {
       padding: 15px;
@@ -543,17 +530,17 @@ body {
       #city-name {
         font-size: 1.5rem;
         position: absolute;
-        top: 550px;
+        top: 500px;
         left: 70px;
         max-width: 320px;
       }
       .main__date {
-        top: 95px;
+        top: 45px;
         left: 30px;
         position: absolute;
       }
       #time {
-        top: 50px;
+        top: 0;
         left: 105px;
         position: absolute;
         font-size: 1.5em;
@@ -561,7 +548,7 @@ body {
       #description {
         position: absolute;
         width: max-content;
-        top: 165px;
+        top: 115px;
         left: 20px;
       }
     }
