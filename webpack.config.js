@@ -47,7 +47,8 @@ const plugins = () => {
         new copyWebpackPligin({
             patterns: [
                 { from: path.resolve(__dirname, 'src/assets/'), to: path.resolve(__dirname, 'app/assets') },
-                { from: path.resolve(__dirname, 'src/img/'), to: path.resolve(__dirname, 'app/img') }
+                { from: path.resolve(__dirname, 'src/img/'), to: path.resolve(__dirname, 'app/img') },
+                { from: path.resolve(__dirname, 'src/manifest.json/'), to: path.resolve(__dirname, 'app/manifest.json') }
             ]
         }), 
     ]
