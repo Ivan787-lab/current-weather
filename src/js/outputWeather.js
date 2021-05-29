@@ -8,7 +8,6 @@ export default function outputWeather(cityName) {
         url: requestUrl,
         type: 'GET',
         success: function (json) {
-            console.log(json);
 
             json.main.temp == undefined ? document.getElementById("main__degrees").parentElement.remove():document.getElementById("main__degrees").innerHTML =  `${Math.round(json.main.temp)} <i class=\"degrees__circle far fa-circle\"></i>` // подобная форма написана для того чтобы изюежать появления undefined на сайте. Если же все таки какого-либо пункта вв json файле не будет, элемент просто удалится
 
