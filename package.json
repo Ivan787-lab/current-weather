@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Ivan787-lab/current-weather#readme",
   "devDependencies": {
     "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-env": "^7.14.4",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.0",
@@ -41,6 +41,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "js-yaml": "^4.1.0",
     "optimize-css-assets-webpack-plugin": "^6.0.0"
   }
 }
